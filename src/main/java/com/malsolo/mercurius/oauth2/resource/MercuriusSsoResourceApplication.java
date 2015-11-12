@@ -2,6 +2,7 @@ package com.malsolo.mercurius.oauth2.resource;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.security.oauth2.resource.EnableOAuth2Resource;
 
 /*
  * It's possible to create a ResourceServerConfiguration that extends ResourceServerConfigurerAdapter
@@ -36,6 +37,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
+@EnableOAuth2Resource
 public class MercuriusSsoResourceApplication {
 
     public static void main(String[] args) {
